@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Practice App</title>
+    
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <form id="calc" onsubmit="doMath(event)">
+      <fieldset>
+        <legend>Operation</legend>
+        <div>
+          <input id="add" type="radio" name="op" value="+" checked/>
+          <label for="add">Addition</label>
+        </div>
+        <div>
+          <input id="sub" type="radio" name="op" value="-"/>
+          <label for="add">Subtraction</label>
+        </div>
+        <div>
+          <input id="mul" type="radio" name="op" value="*"/>
+          <label for="add">Multiplication</label>
+        </div>
+        <div>
+          <input id="div" type="radio" name="op" value="|"/>
+          <label for="add">Division</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Operands</legend>
+        <input id="val1" type="number" placeholder="First"/>
+        <input id="val2" type="number" placeholder="Second"/>
+        <input type="submit" value="Perform Operation"/>
+      </fieldset>
+    </form>
+    <h1 id="result"></h1>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
